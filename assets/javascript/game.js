@@ -1,10 +1,6 @@
-$(document).ready(function() {
-    var RandomComputerNumber= 19 + Math.floor(Math.random() * 102);
-   
-    //
-    $("#randomNumber").text(RandomComputerNumber);
-    
-    //
+
+
+
     var one=  1 + Math.floor(Math.random() * 12);
     var two=  1 + Math.floor(Math.random() * 12);
     var three=  1 + Math.floor(Math.random() * 12);
@@ -14,10 +10,10 @@ $(document).ready(function() {
     var userTotal= 0; 
     var wins= 0;
     var losses = 0;
-    //  Decaring variables for tallies
+
   $("#numberWins").text(wins);
   $("#numberLosses").text(losses);
-  //resets the game
+
   function reset(){
         RandomComputerNumber= 19 + Math.floor(Math.random() * 102);
         console.log(RandomComputerNumber)
@@ -48,7 +44,7 @@ $(document).ready(function() {
       userTotal = userTotal + num1;
       console.log("New userTotal= " + userTotal);
       $("#finalTotal").text(userTotal); 
-            //sets win/lose conditions
+     
           if (userTotal == Random){
             yay();
           }
@@ -71,7 +67,7 @@ $(document).ready(function() {
       userTotal = userTotal + num3;
       console.log("New userTotal= " + userTotal);
       $("#finalTotal").text(userTotal);
-  //sets win/lose conditions
+ 
             if (userTotal == Random){
             yay();
           }
