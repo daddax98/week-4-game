@@ -1,10 +1,13 @@
+$(document).ready(function() {
+var one, two, three, four;
 
 
+    RandomComputerNumber= 19 + Math.floor(Math.random() * 102);
 
-    var one=  1 + Math.floor(Math.random() * 12);
-    var two=  1 + Math.floor(Math.random() * 12);
-    var three=  1 + Math.floor(Math.random() * 12);
-    var four=  1 + Math.floor(Math.random() * 12);
+    one=  1 + Math.floor(Math.random() * 12);
+    two=  1 + Math.floor(Math.random() * 12);
+    three=  1 + Math.floor(Math.random() * 12);
+    four=  1 + Math.floor(Math.random() * 12);
    
     // 
     var userTotal= 0; 
@@ -16,8 +19,11 @@
 
   function reset(){
         RandomComputerNumber= 19 + Math.floor(Math.random() * 102);
+
         console.log(RandomComputerNumber)
+
         $("#randomNumber").text(Random);
+
         num1=  1 + Math.floor(Math.random() * 12);
         num2=  1 + Math.floor(Math.random() * 12);
         num3=  1 + Math.floor(Math.random() * 12);
