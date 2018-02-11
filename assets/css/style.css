@@ -3,12 +3,12 @@ body{
 	background-image: url("../images/background.png")
 }
 div{
-	background-color: white;
+	background-color: rgb(235, 84, 84);
 	margin: 10px;
 	width: 25%
 }
 div{
-	border: solid 2px antiquewhite;
+	border: solid 2px rgb(45, 128, 236);
 	padding: 10px;
 }
 h1, h3, span{
@@ -30,28 +30,28 @@ div.header, div.gems{
 	background-color: #e0e0eb;
 }
 div.header, div.instructions{
-	width: 50%;
+	width: 80%;
 }
 /* Classes */
 .numberToMatch, .winsAndLosses{
 	float: left;
-	width: 15%;
+	width: 25%;
 	height: 60px;
 }
 .userTotal{
-	width: 15%;
+	width: 25%;
 	height: 60px;
 }
 .gems{
 	clear: both;
 }
 .gemImage{
-	height: 60px;
-	margin: 10px;
+	height: 90px;
+	margin: 15px;
 }
 /* IDs */
-#blue{
-	color: #3092c7;
+#navy{
+	color: #071669;
 }
 #green{
 	color: #00aa59;
@@ -59,6 +59,6 @@ div.header, div.instructions{
 #red{
 	color: #ec4b5f;
 }
-#yellow{
-	color: #ffc225;
+#purple{
+	color: #7e4dcefa;
 }
