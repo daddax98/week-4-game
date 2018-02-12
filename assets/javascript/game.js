@@ -39,7 +39,7 @@ $(document).ready(function() {
         } 
   
   function yay(){
-  alert("winner winner chicken dinner!");
+  alert("You da rainmaker!");
     wins++; 
     $("#numberWins").text(wins);
     reset();
