@@ -1,13 +1,13 @@
 $(document).ready(function() {
-var one, two, three, four;
+   
 
 
     RandomComputerNumber= 19 + Math.floor(Math.random() * 102);
 
-    one=  1 + Math.floor(Math.random() * 12);
-    two=  1 + Math.floor(Math.random() * 12);
-    three=  1 + Math.floor(Math.random() * 12);
-    four=  1 + Math.floor(Math.random() * 12);
+    Jewlone=  1 + Math.floor(Math.random() * 12);
+    Jewltwo=  1 + Math.floor(Math.random() * 12);
+    Jewlthree=  1 + Math.floor(Math.random() * 12);
+    Jewlfour=  1 + Math.floor(Math.random() * 12);
    
     // 
     var userTotal= 0; 
@@ -24,10 +24,10 @@ var one, two, three, four;
 
         $("#randomNumber").text(Random);
 
-        num1=  1 + Math.floor(Math.random() * 12);
-        num2=  1 + Math.floor(Math.random() * 12);
-        num3=  1 + Math.floor(Math.random() * 12);
-        num4=  1 + Math.floor(Math.random() * 12);
+        Jewlone=  1 + Math.floor(Math.random() * 12);
+        Jewltwo=  1 + Math.floor(Math.random() * 12);
+        Jewlthree=  1 + Math.floor(Math.random() * 12);
+        Jewlfour=  1 + Math.floor(Math.random() * 12);
         userTotal= 0;
         $("#finalTotal").text(userTotal);
         } 
@@ -94,3 +94,7 @@ var one, two, three, four;
           }
     });   
   }); 
+
+function newFunction() {
+    var one, two, three, four;
+}
