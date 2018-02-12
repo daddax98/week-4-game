@@ -11,6 +11,7 @@ $(document).ready(function() {
         var RandomComputerNumber;
 
     RandomComputerNumber= 19 + Math.floor(Math.random() * 102);
+    $("#RandomComputerNumber").text(RandomComputerNumber);
 
     Jewlone=  1 + Math.floor(Math.random() * 12);
     Jewltwo=  1 + Math.floor(Math.random() * 12);
@@ -27,7 +28,7 @@ $(document).ready(function() {
 
         console.log(RandomComputerNumber)
 
-        $("#randomNumber").text(Random);
+        $("#RandomComputerNumber").text(RandomComputerNumber);
 
         Jewlone=  1 + Math.floor(Math.random() * 12);
         Jewltwo=  1 + Math.floor(Math.random() * 12);
@@ -54,7 +55,7 @@ $(document).ready(function() {
     $("#Jewlone").on ("click", function(){
       userTotal = userTotal + Jewlone;
       console.log("New userTotal= " + userTotal);
-      $("#userTotal").text(userTotal); 
+      $("#finalTotal").text(userTotal); 
      
           if (userTotal === RandomComputerNumber){
             yay();
@@ -66,7 +67,7 @@ $(document).ready(function() {
     $("#Jewltwo").on ("click", function(){
       userTotal = userTotal + Jewltwo;
       console.log("New userTotal= " + userTotal);
-      $("#userTotal").text(userTotal); 
+      $("#finalTotal").text(userTotal); 
           if (userTotal === RandomComputerNumber){
             yay();
           }
@@ -77,7 +78,7 @@ $(document).ready(function() {
     $("#Jewlthree").on ("click", function(){
       userTotal = userTotal + Jewlthree;
       console.log("New userTotal= " + userTotal);
-      $("#userTotal").text(userTotal);
+      $("#finalTotal").text(userTotal);
  
             if (userTotal === RandomComputerNumber){
             yay();
