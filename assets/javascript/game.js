@@ -29,9 +29,9 @@ $(document).ready(function() {
         Jewlthree=  1 + Math.floor(Math.random() * 12);
         Jewlfour=  1 + Math.floor(Math.random() * 12);
         userTotal= 0;
-        $("#finalTotal").text(userTotal);
+        $("#userTotal").text(userTotal);
         } 
-  l
+  
   function yay(){
   alert("winner winner chicken dinner!");
     wins++; 
@@ -46,50 +46,50 @@ $(document).ready(function() {
     reset()
   }
   
-    $("#one").on ("click", function(){
+    $("#Jewlone").on ("click", function(){
       userTotal = userTotal + num1;
       console.log("New userTotal= " + userTotal);
-      $("#finalTotal").text(userTotal); 
+      $("#userTotal").text(userTotal); 
      
-          if (userTotal == Random){
+          if (userTotal === RandomComputerNumber){
             yay();
           }
-          else if ( userTotal > Random){
+          else if ( userTotal > RandomComputerNumber){
             loser();
           }   
     })  
-    $("#two").on ("click", function(){
+    $("#Jewltwo").on ("click", function(){
       userTotal = userTotal + num2;
       console.log("New userTotal= " + userTotal);
-      $("#finalTotal").text(userTotal); 
-          if (userTotal == Random){
+      $("#userTotal").text(userTotal); 
+          if (userTotal === RandomComputerNumber){
             yay();
           }
-          else if ( userTotal > Random){
+          else if ( userTotal > RandomComputerNumber){
             loser();
           } 
     })  
-    $("#three").on ("click", function(){
+    $("#Jewlthree").on ("click", function(){
       userTotal = userTotal + num3;
       console.log("New userTotal= " + userTotal);
-      $("#finalTotal").text(userTotal);
+      $("#userTotal").text(userTotal);
  
-            if (userTotal == Random){
+            if (userTotal === RandomComputerNumber){
             yay();
           }
-          else if ( userTotal > Random){
+          else if ( userTotal > RandomComputerNumber){
             loser();
           } 
     })  
-    $("#four").on ("click", function(){
+    $("#Jewlfour").on ("click", function(){
       userTotal = userTotal + num4;
       console.log("New userTotal= " + userTotal);
       $("#finalTotal").text(userTotal); 
         
-            if (userTotal == Random){
+            if (userTotal === RandomComputerNumber){
             yay();
           }
-          else if ( userTotal > Random){
+          else if ( userTotal > RandomComputerNumber){
             loser();
           }
     });   
