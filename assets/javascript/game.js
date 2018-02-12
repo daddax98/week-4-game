@@ -1,6 +1,14 @@
 $(document).ready(function() {
-   
+    
+    var userTotal= 0; 
+    var wins= 0;
+    var losses = 0;
+       
+    var Jewlone, Jewltwo, Jewlthree, Jewlfour;
+    
+    
 
+        var RandomComputerNumber;
 
     RandomComputerNumber= 19 + Math.floor(Math.random() * 102);
 
@@ -10,9 +18,6 @@ $(document).ready(function() {
     Jewlfour=  1 + Math.floor(Math.random() * 12);
    
     // 
-    var userTotal= 0; 
-    var wins= 0;
-    var losses = 0;
 
   $("#numberWins").text(wins);
   $("#numberLosses").text(losses);
@@ -47,7 +52,7 @@ $(document).ready(function() {
   }
   
     $("#Jewlone").on ("click", function(){
-      userTotal = userTotal + num1;
+      userTotal = userTotal + Jewlone;
       console.log("New userTotal= " + userTotal);
       $("#userTotal").text(userTotal); 
      
@@ -59,7 +64,7 @@ $(document).ready(function() {
           }   
     })  
     $("#Jewltwo").on ("click", function(){
-      userTotal = userTotal + num2;
+      userTotal = userTotal + Jewltwo;
       console.log("New userTotal= " + userTotal);
       $("#userTotal").text(userTotal); 
           if (userTotal === RandomComputerNumber){
@@ -70,7 +75,7 @@ $(document).ready(function() {
           } 
     })  
     $("#Jewlthree").on ("click", function(){
-      userTotal = userTotal + num3;
+      userTotal = userTotal + Jewlthree;
       console.log("New userTotal= " + userTotal);
       $("#userTotal").text(userTotal);
  
@@ -82,7 +87,7 @@ $(document).ready(function() {
           } 
     })  
     $("#Jewlfour").on ("click", function(){
-      userTotal = userTotal + num4;
+      userTotal = userTotal + Jewlfour;
       console.log("New userTotal= " + userTotal);
       $("#finalTotal").text(userTotal); 
         
@@ -95,6 +100,3 @@ $(document).ready(function() {
     });   
   }); 
 
-function newFunction() {
-    var one, two, three, four;
-}
